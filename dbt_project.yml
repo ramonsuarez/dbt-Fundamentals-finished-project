@@ -2,7 +2,7 @@
 # Name your project! Project names should contain only lowercase characters
 # and underscores. A good package name should reflect your organization's
 # name or the intended use of these models
-name: 'my_new_project'
+name: 'dbt_course_in_Fabric'
 version: '1.0.0'
 config-version: 2
 
@@ -44,7 +44,7 @@ models:
       +materialized: view
 
 
-# Added by me: configure sources to be able to seed
+# Configure sources to be able to seed init
 vars:
   load_source_data: true
 seeds:
