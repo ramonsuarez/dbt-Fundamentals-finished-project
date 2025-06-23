@@ -1,0 +1,31 @@
+version: 2
+
+models:
+  - name: fct_orders
+    description: fact table of orders with payment info
+    config:
+      contract:
+        enforced: true
+    columns:
+      - name: order_id
+        description: the primary key for orders
+        data_type: int
+        constraints:
+          - type: not_null
+        tests:
+          - unique
+          - not_null
+
+      - name: customer_id
+        description: id of the customer who placed the order
+        data_type: int
+        tests:
+          - not_null
+
+      - name: amount
+        description: total successful payment amount for the order
+        data_type: int
+
+      - name: order_date
+        description: the date the order was placed
+        data_type: date
