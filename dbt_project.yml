@@ -44,10 +44,10 @@ models:
       +materialized: view
 
 
-# Configure sources to be able to seed init
-vars:
-  load_source_data: true
-seeds:
-  jaffle_shop:
-    +schema: raw       # your target seed schema
+# # Configure sources to be able to seed init
+# vars:
+#   load_source_data: true
+# seeds:
+#   jaffle_shop:
+#     +schema: raw       # your target seed schema
 
