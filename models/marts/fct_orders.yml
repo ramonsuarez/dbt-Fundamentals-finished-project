@@ -3,6 +3,8 @@ version: 2
 models:
   - name: fct_orders
     description: fact table of orders with payment info
+    latest_version: 2
+    access: public
     config:
       contract:
         enforced: true
@@ -29,3 +31,25 @@ models:
       - name: order_date
         description: the date the order was placed
         data_type: date
+
+    versions:
+      - v: 1
+        config:
+          alias: fct_orders
+      - v: 2
+        columns:
+          - name: order_id
+            data_type: int
+          - name: customer_id
+            data_type: int
+          - name: order_amount
+            data_type: int
+          - name: ordered_at
+            data_type: date
+          # - name: location_opened_at
+          #   data_type: date
+          - include: all
+            exclude: [amount, order_date]
+
+  - name: int_orders
+    description: intermediary model created to match the course exercise
