@@ -1,0 +1,7 @@
+# packages:
+#   - package: metaplane/dbt_expectations
+#     version: 0.10.9
+
+packages:
+  - package: tnightengale/dbt_meta_testing
+    version: 0.3.6
