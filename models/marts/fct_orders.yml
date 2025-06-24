@@ -3,8 +3,9 @@ version: 2
 models:
   - name: fct_orders
     description: fact table of orders with payment info
-    latest_version: 2
+    latest_version: 1
     access: public
+    group: finance
     config:
       contract:
         enforced: true
