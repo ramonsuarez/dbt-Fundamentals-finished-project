@@ -18,6 +18,10 @@ models:
         tests:
           - unique
           - not_null
+      - name: amount
+        description: "Order amount"
+        tests:
+          - average_dollars_spent_greater_than_one
       - name: status
         description: "{{ doc('order_status') }}"
         tests:

@@ -1,7 +1,13 @@
-# packages:
-#   - package: metaplane/dbt_expectations
-#     version: 0.10.9
-
+# Run `dbt deps`to install
 packages:
   - package: tnightengale/dbt_meta_testing
     version: 0.3.6
+  - package: metaplane/dbt_expectations
+    version: 0.10.9
+  - package: dbt-labs/dbt_utils
+    version: 1.3.0 
+  - package: dbt-labs/audit_helper
+    version: 0.12.1
+  # For snowflake only
+  # - package: Divergent-Insights/dbt_dataquality
+  #   version: 0.3.5
