@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: jaffleshop
+    schema: raw
+    tables:
+      - name: customers
+      - name: items
+      - name: products
+      - name: supplies
