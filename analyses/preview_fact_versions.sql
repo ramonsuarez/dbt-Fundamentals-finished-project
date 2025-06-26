@@ -1,0 +1,1 @@
+{{ ref('fct_orders', version=2) }}
