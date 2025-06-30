@@ -1,14 +1,22 @@
 # dbt Fundamentals for Microsoft Fabric
 
-This is an adapted version of the dbt Fundamentals course materials, configured to work with Microsoft Fabric's SQL analytics endpoint using the dbt-fabric connector.
+This is an adapted version of the dbt Fundamentals course materials, configured to work with Microsoft Fabric's SQL analytics endpoint for the data warehouse using the dbt-fabric connector.
 
 ## Prerequisites
 
 1. **Microsoft Fabric Environment**
    - Access to a Microsoft Fabric workspace with admin privileges
    - A Warehouse for the project.
+   - Add data to the warehouse with [this script](https://docs.getdbt.com/docs/quickstarts/microsoft-fabric)
+
+More info on this [quickstart for dbt and Microsoft Fabric](https://docs.getdbt.com/docs/quickstarts/microsoft-fabric)
 
 2. **Service Principal Setup**
+
+**GUI**
+[GUI instructions](https://docs.microsoft.com/en-us/powershell/module/az.resources/new-azadserviceprincipal?view=azps-11.1.0)
+
+**CLI**
    ```powershell
    # Create a service principal in Azure AD
    $sp = New-AzADServicePrincipal -DisplayName "dbt-fabric-sp"
@@ -57,7 +65,7 @@ This is an adapted version of the dbt Fundamentals course materials, configured 
 
 1. **Clone the Repository**
    ```bash
-   git clone https://github.com/your-username/dbt-Fundamentals-finished-project.git
+   git clone https://github.com/ramonsuarez/dbt-Fundamentals-finished-project.git
    cd dbt-Fundamentals-finished-project
    ```
 
