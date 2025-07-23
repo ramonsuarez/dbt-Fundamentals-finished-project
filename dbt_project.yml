@@ -34,20 +34,19 @@ clean-targets: # directories to be removed by `dbt clean`
 # using the `{{ config(...) }}` macro.
 
 models:
-  marts:
-    +materialized: table
-
-  staging:
-    jaffle_shop:
-      +materialized: view
-    stripe:
-      +materialized: view
-
+    staging:
+      jaffle_shop:
+        +materialized: view
+      stripe:
+        +materialized: view
+    marts:
+      +materialized: table
+      +required_tests: {'unique, *|not_null': 2}
       
 # # Configure sources to be able to seed init
 # vars:
 #   load_source_data: true
 seeds:
-  jaffle_shop:
+  jaffleshop:
     +schema: raw       # your target seed schema
 
