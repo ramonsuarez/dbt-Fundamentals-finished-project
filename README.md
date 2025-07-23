@@ -1,6 +1,6 @@
-# dbt Fundamentals for Microsoft Fabric
+# dbt Fundamentals & Certified Developer learning path labs adapted for use Microsoft Fabric
 
-This is an adapted version of the dbt Fundamentals course materials, configured to work with Microsoft Fabric's SQL analytics endpoint for the data warehouse using the dbt-fabric connector.
+This is an adapted version of the dbt Fundamentals course materials plus most of the exercises in the learning path labs, configured to work with Microsoft Fabric's SQL analytics endpoint for the data warehouse using the dbt-fabric connector.
 
 ## Prerequisites
 
