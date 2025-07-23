@@ -42,6 +42,7 @@ models:
     marts:
       +materialized: table
       +required_tests: {'unique, *|not_null': 2}
+      
 # # Configure sources to be able to seed init
 # vars:
 #   load_source_data: true
