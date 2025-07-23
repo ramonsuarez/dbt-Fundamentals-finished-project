@@ -50,3 +50,6 @@ seeds:
   jaffleshop:
     +schema: raw       # your target seed schema
 
+snapshots:
+  +schema: snapshots
+  +database: jaffleshop

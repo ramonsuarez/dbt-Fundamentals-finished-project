@@ -8,5 +8,4 @@ from {{ model }}
 group by {{ group_by_columns | join(', ') }}
 having avg({{ column_name }}) < 1
 
-
 {% endtest %}
