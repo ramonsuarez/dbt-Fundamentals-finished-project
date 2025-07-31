@@ -42,7 +42,7 @@ models:
         +materialized: view
     marts:
       +materialized: table
-      # +required_tests: {'unique, *|not_null': 2}
+      # +required_tests: {'unique, *|not_null': 2} # disabled tests to find issue in build
       
 # # Configure sources to be able to seed init
 # vars:
