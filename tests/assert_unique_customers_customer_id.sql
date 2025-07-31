@@ -1,5 +1,5 @@
-select id
+select id, count(*) as count
 from {{ source ('jaffle_shop', 'customers') }}
 where id is not null
 group by id
-having id > 1
+having count(*) > 1
