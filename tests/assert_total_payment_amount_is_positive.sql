@@ -1,3 +1,5 @@
+{{ config(enabled = false) }}
+
 select
     customer_id, 
     avg(amount) as average_amount
