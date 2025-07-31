@@ -1,5 +1,6 @@
 select
-    customer_id
-from {{ ref('jaffle_shop', 'orders') }}
-group by customer_id
-having customer_id > 1
+    id
+from {{ source ('jaffle_shop', 'customer') }}
+where id is not null
+group by id
+having id > 1
