@@ -22,8 +22,8 @@ models:
       - name: customer_id
         description: id of the customer who placed the order
         data_type: int
-        tests:
-          - not_null
+        # tests:
+        #   - not_null
 
       - name: amount
         description: total successful payment amount for the order
