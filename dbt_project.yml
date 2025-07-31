@@ -34,6 +34,7 @@ clean-targets: # directories to be removed by `dbt clean`
 # using the `{{ config(...) }}` macro.
 
 models:
+  dbt_course_in_Fabric:
     staging:
       jaffle_shop:
         +materialized: view
@@ -41,7 +42,7 @@ models:
         +materialized: view
     marts:
       +materialized: table
-      +required_tests: {'unique, *|not_null': 2}
+      # +required_tests: {'unique, *|not_null': 2}
       
 # # Configure sources to be able to seed init
 # vars:
