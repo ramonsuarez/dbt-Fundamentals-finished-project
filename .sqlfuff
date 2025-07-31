@@ -1,0 +1,7 @@
+[sqlfluff]
+dialect = tsql
+templater = dbt
+
+[sqlfluff:templater:dbt]
+# point to your dbt project directory if not root
+project_dir = .
