@@ -48,8 +48,9 @@ models:
 # vars:
 #   load_source_data: true
 seeds:
-  jaffleshop:
-    +schema: raw       # your target seed schema
+  dbt_course_in_Fabric:
+    jaffleshop:
+      +schema: raw       # your target seed schema
 
 snapshots:
   +schema: snapshots
