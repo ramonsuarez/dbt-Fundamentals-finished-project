@@ -50,7 +50,7 @@ models:
 seeds:
   dbt_course_in_Fabric:
     jaffleshop:
-      +schema: raw       # your target seed schema
+      +schema: ci_raw       # your target seed schema
 
 snapshots:
   +schema: snapshots
