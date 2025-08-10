@@ -53,5 +53,5 @@ seeds:
       +schema: ci_raw       # your target seed schema
 
 snapshots:
-  +schema: snapshots
+  +schema: ci_snapshots
   +database: jaffleshop

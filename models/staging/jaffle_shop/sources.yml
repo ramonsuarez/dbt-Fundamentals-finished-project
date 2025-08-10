@@ -2,7 +2,7 @@ version: 2
 
 sources:
   - name: jaffleshop
-    schema: raw
+    schema: ci_raw
     tables:
       - name: customers
       - name: items

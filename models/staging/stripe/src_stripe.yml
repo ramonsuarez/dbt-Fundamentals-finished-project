@@ -3,7 +3,7 @@ version: 2
 sources:
   - name: stripe
     database: jaffleshop
-    schema: raw
+    schema: ci_raw
     tables:
       - name: payments
         loaded_at_field: _batched_at
