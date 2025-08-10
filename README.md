@@ -1,4 +1,4 @@
-# dbt Fundamentals & Certified Developer learning path labs adapted for use Microsoft Fabric
+# dbt in Microsoft Fabric demo
 
 This is an adapted version of the dbt Fundamentals course materials plus most of the exercises in the learning path labs, configured to work with Microsoft Fabric's SQL analytics endpoint for the data warehouse using the dbt-fabric connector.
 
@@ -7,7 +7,7 @@ This is an adapted version of the dbt Fundamentals course materials plus most of
 1. **Microsoft Fabric Environment**
    - Access to a Microsoft Fabric workspace with admin privileges
    - A Warehouse for the project.
-   - Add data to the warehouse with [this script](https://docs.getdbt.com/docs/quickstarts/microsoft-fabric)
+   - Create the source tables: Go to the dbt + Microsoft Fabric setup guide (Step 2), copy the provided SQL script, and run it as a query in your Fabric Warehouse. This will create the base tables required for the demo project.
 
 More info on this [quickstart for dbt and Microsoft Fabric](https://docs.getdbt.com/docs/quickstarts/microsoft-fabric)
 
@@ -109,6 +109,7 @@ More info on this [quickstart for dbt and Microsoft Fabric](https://docs.getdbt.
 1. **Prepare Your Fabric Environment**
    - Ensure you have a Warehouse (not a Lakehouse) in your Fabric workspace
    - The project is pre-configured to use the Warehouse for all read/write operations
+   - Source tables created (see Prerequisites above)
    - Note: The dbt-fabric connector can read from Lakehouse but requires a Warehouse for writing
 
 2. **Running dbt Commands**
@@ -213,7 +214,7 @@ snapshots/                 # Snapshots for SCD Type 2
 ## Troubleshooting
 
 1. **Connection Issues**
-   - Verify service principal has admin access to the Fabric workspace
+   - Verify service principal has admin access to the Fabric workspace and that it is given CONNECT privileges to the database
    - Check that the SQL endpoint is running
    - Ensure the ODBC driver is installed
 
